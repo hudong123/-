@@ -1,0 +1,55 @@
+*{padding:0;margin:0}
+ul li{list-style:none}
+a{text-decoration:none}
+.clear{clear:both}
+#header{width:100%;height:auto;padding-top:20px;font-size:14px;transition:all ease .3s;z-index:99;transition-property:padding,background}
+#header .content{padding:0 40px}
+#header.mini{background-color:rgba(0,0,0,.51);padding-top:10px}
+#header.mini ul li.navitem{padding-bottom:0}
+#header #logo{width:auto;height:40px;display:block;float:left;margin-right:50px}
+#header ul li.navitem{padding:0 20px 10px 20px;width:auto;height:50px;line-height:40px;float:left;position:relative}
+#header ul li.navitem ul.subnav{transition:all .3s ease-out 0s;position:absolute;width:140px;border-top:#838383 3px solid;opacity:0;visibility:hidden;transform:translate3d(0,10px,0);-moz-transform:translate3d(0,10px,0);-webkit-transform:translate3d(0,10px,0)}
+#header ul li.navitem:hover ul.subnav{opacity:1;visibility:visible;transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0)}
+#header ul li.navitem a{color:#fff;transition:none ease-out .3s;transition-property:color,background,text-indent,opacity}
+#header ul li.navitem a.active,#header ul li.navitem:hover a{color:#838383}
+
+
+#header ul li.navitem a.active, #header ul li.navitem:hover a { color: #00B7B1;background: transparent; }
+#header.mini { background: rgb(24, 24, 24); padding-top: 0px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); }
+#header .content { padding-left: 0px; padding-right: 0px; }
+#header ul#nav { float: right; padding: 0px 40px 0px 40px; transition: all 0.3s ease-out 0s; }
+#header.mini ul#nav { padding: 0px 20px 0px 20px; }
+#header ul li.navitem { padding: 20px 0.5px; height: auto; }#header ul li.navitem:hover a::before{display: block;width: 59px;}
+#header.mini ul li.navitem { padding: 10px 0.5px; }
+#header { padding-top: 0px;}
+#header #logo { padding: 20px 40px 20px 40px; transition: all 0.3s ease-out 0s; }
+#header #logo img { transform: scale(1, 1); transition: all 0.3s ease-out 0s; }
+#header.mini #logo { padding: 10px 20px 10px 20px; }
+#header.mini #logo img { transform: scale(0.8, 0.8); }
+#header ul li.navitem a { color: #7B7B7B; padding: 10px 26px; display: block; position: relative;}
+#header ul li.navitem { padding: 20px 0.5px; height: auto; line-height: 20px;}
+
+ /*导航下划线渐变*/
+#header ul li.navitema::before{width:0px;height: 2px;left: 0;transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;content: '';height: 2px;position: absolute;background: linear-gradient(to right, #FB213E 9%,#CA326F, #B336B7) !important;left: 25px;top: 59px;position: absolute;}
+#header.mini ul li.navitem a.active::before, #header ul li.navitem:hover a::before {display: none;}
+#header ul li.navitem a.active::before, #header ul li.navitem:hover a::before { transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;}
+#header ul li.navitem:hover a::before { width: 20px;}
+#header ul li.navitem ul.subnav li a::before { width: 0px; }
+
+
+#header ul li.navitem { line-height: 30px; }
+#header ul li.navitem ul.subnav li a{border-bottom:medium none transparent;padding:14px 30px;height:20px;line-height:20px;background:rgba(255,255,255,1) none repeat scroll 0 0;display:block;font-size:12px;transition:all .2s ease-out 0s;color:#999}
+#header ul li.navitem ul.subnav li a:hover{text-indent:10px;background:#00b7b1;color:white}
+#header ul li.navitem ul.subnav{border-top:0 solid #7B7B7B;border-radius:0;box-shadow:0 12px 36px rgba(0,0,0,.16)}
+/*#header ul li.navitem ul.subnav li{border-bottom:1px solid #f0f0f0}*/
+#header ul li.navitem .fa-angle-right:before{margin-top: 0px;color: rgba(250, 250, 250, 0.78)}
+#header ul li:hover{}
+#header ul li.navitem a::after { content:''; position: absolute; width: 0%; background: linear-gradient(to right, #00B7B1 8%,#00B7C1 68%, #00B7D1 ); left: 50%;transition: all 0.3s ease 0s; z-index: -1;height: 2px;top: 58px;}
+#header ul li.navitem a.active:after{width:60%;background:linear-gradient(to right,#00B7B1 8%,#00B7C1 68%,#00B7D1);left:20%}
+#header ul li.navitem:hover a:after{left:20%;width:60%;background:linear-gradient(to right,#00B7B1 8%,#00B7C1 68%,#00B7D1)}
+#header.mini ul li.navitem a.active:after,#header.mini ul li.navitem:hover a:after{content:'';width:60%;background:linear-gradient(to right,#00B7B1 8%,#00B7C1 68%,#00B7D1);left:20%;position:absolute;top:49px;height:2px;transition:all .3s ease 0s;z-index:-1}
+#header ul li.navitem:hover .subnav li a:after{display:none}
+#header ul li.navitem.subnav li a:after{display:none}
+
+
+
